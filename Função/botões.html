@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+		<head>
+			<title> Olá Mundo! </title>
+		</head>
+		<body>
+				<h1> Olá Mundo! </h1>
+
+				<p id = "primeiro_paragrafo">Olá Mundo! Este é o primeiro parágrafo!</p>
+
+				<button onclick="trocafundo()">Trocar a cor do fundo</button>
+				<button onclick="trocafonte()">Trocar a fonte do texto</button>
+				<button onclick="trocatexto()">Trocar o texto</button>
+
+		</body>
+		<script type="text/javascript">
+
+			function trocatexto(){
+
+				let paragrafo = document.getElementById("primeiro_paragrafo");
+
+				if(paragrafo.textContent === 'Olá Mundo! Este é o primeiro parágrafo!'){
+
+					paragrafo.textContent = 'Hello World! Esse é o primeiro parágrafo!';
+
+				}	
+				else{
+
+					paragrafo.textContent = 'Olá Mundo! Este é o primeiro parágrafo!';
+				}
+			}
+
+			function trocafonte(){
+				
+				let paragrafo = document.getElementById("primeiro_paragrafo");
+
+				if(paragrafo.style.fontFamily === 'Times New Roman'){
+					
+					paragrafo.style.fontFamily = 'Arial';
+
+				} 
+				else {
+					paragrafo.style.fontFamily = 'Times New Roman';
+				}
+
+			}
+		
+			function trocafundo(){
+
+				if(document.bgColor === '#FFFFFF'){
+
+					document.bgColor = '#1E90FF';
+
+				}
+				else {
+
+					document.bgColor = '#FFFFFF';
+
+				}
+			}
+
+
+		</script>
+</html>
