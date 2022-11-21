@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Koo</title>
+</head>
+<body>
+
+<center><h1>Koo</h1></center>
+
+<p>Nesta tarefa, você deve associar um botão à duas funções/ações: trocar 
+a imagem que é mostrada na tela, e abrir uma janela no navegador dizendo "Koo!".
+</p>
+<p>Você deve usar event Listeners para isto.</p>
+<br/>
+
+<center><img id="imagem" src="koo.jpg">
+<br/>
+
+<button onclick="koo()" id="botao">Clique aqui</button>
+</body> </center>
+
+<script type="text/javascript">
+    
+    function koo(){
+        alert("Koo!!");
+        
+        console.log("a");
+
+        let imagem = document.getElementById("imagem");
+
+        console.log(imagem);
+
+        if (imagem.src === "file:///C:/Users/aluno/Downloads/events/events/koo.jpg"){
+            imagem.src = "solta.png";
+        }
+        else{
+            imagem.src = 'koo.jpg';
+        }
+    }  
+
+</script>
+</html>
